@@ -13,18 +13,16 @@ import java.util.Scanner;
 public class RunS {
 
     public static void main(String[] args) {
-        // TODO code application logic here
         int rows;
-        try (
-                Scanner sc = new Scanner(System.in)) {
-
-            System.out.println("Введите число полос:");
-            rows = sc.nextInt();
-            for (int i = 1; i <= rows; i += 1) {
-                System.out.println("***+++***+++***+++***");
-            }
-            System.out.println();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите число полос:");
+        rows = sc.nextInt();
+        sc.close();
+        for (int i = 1; i <= rows; i += 1) {
+            System.out.println("***+++***+++***+++***");
         }
+        System.out.println();
+
     }
 
 }
